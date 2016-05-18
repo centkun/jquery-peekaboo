@@ -30,7 +30,7 @@ jQuery(function() {
    * peekaboo triggers appear or disappear events.
    */
   
-  $('.boxes').on('appear disappear', function(e) {
+  $('.boxes').peekaboo().on('appear disappear', function(e) {
     console.log(this, $(this).data('pkb-state'));
   });
 });
